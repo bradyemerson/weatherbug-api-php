@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class WBWrapper</title>
+			<link rel="stylesheet" href="./media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			 <h2 class="class-name">Class WBWrapper</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">WBWrapper</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Brady Emerson</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">copyright:</span> 2008</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_WBWrapper.inc.html">/WBWrapper.inc</a> (line <span class="field">38</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#CACHE_TABLE" title="details" class="const-name">CACHE_TABLE</a> = 					<span class="var-type"> 'WB_cache'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#CACHE_TIME" title="details" class="const-name">CACHE_TIME</a> = 					<span class="var-type"> 900</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$cache" title="details" class="var-name">$cache</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$lastError" title="details" class="var-name">$lastError</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$lastMySQLError" title="details" class="var-name">$lastMySQLError</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$lastURL" title="details" class="var-name">$lastURL</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$wb_key" title="details" class="var-name">$wb_key</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#cache_check" title="details" class="method-name">cache_check</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$request</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$useOld</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#cache_remove" title="details" class="method-name">cache_remove</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$request</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#cache_result" title="details" class="method-name">cache_result</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$request</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$response</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">WBWrapper</span>
+										<a href="#WBWrapper" title="details" class="method-name">WBWrapper</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$cache</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_alerts" title="details" class="method-name">wb_alerts</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_alertsRSS" title="details" class="method-name">wb_alertsRSS</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#wb_cameraList" title="details" class="method-name">wb_cameraList</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_compact" title="details" class="method-name">wb_compact</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$stat_id</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_compactLiveWeather" title="details" class="method-name">wb_compactLiveWeather</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_complete" title="details" class="method-name">wb_complete</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$stat_id</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_forecast" title="details" class="method-name">wb_forecast</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_forecastRSS" title="details" class="method-name">wb_forecastRSS</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_liveWeather" title="details" class="method-name">wb_liveWeather</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_searchLocations" title="details" class="method-name">wb_searchLocations</a>
+											(<span class="var-type">string|int</span>&nbsp;<span class="var-name">$searchString</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wb_stationList" title="details" class="method-name">wb_stationList</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$cache" id="$cache"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$cache</span>
+						(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$lastError" id="$lastError"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$lastError</span>
+						(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$lastMySQLError" id="$lastMySQLError"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$lastMySQLError</span>
+						(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$lastURL" id="$lastURL"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$lastURL</span>
+						(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$wb_key" id="$wb_key"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$wb_key</span>
+						(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodcache_check" id="cache_check"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">cache_check</span> (line <span class="line-number">1042</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Internal function that checks if cache exists</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			cache_check
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$request</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$useOld</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$request</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$useOld</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcache_remove" id="cache_remove"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">cache_remove</span> (line <span class="line-number">1061</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Internal function to clear cache out of database</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			cache_remove
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$request</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$request</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcache_result" id="cache_result"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">cache_result</span> (line <span class="line-number">1026</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Internal function that caches result</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			cache_result
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$request</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$response</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$request</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$response</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodWBWrapper" id="WBWrapper"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor WBWrapper</span> (line <span class="line-number">52</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">WBWrapper::WBWrapper()</p>
+	
+	<div class="method-signature">
+		<span class="method-result">WBWrapper</span>
+		<span class="method-name">
+			WBWrapper
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$cache</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$cache</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_alerts" id="wb_alerts"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_alerts</span> (line <span class="line-number">181</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns weather alert information for a given Zip Code or latitude/longitude (U.S. Only).</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_alerts
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$code</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_alertsRSS" id="wb_alertsRSS"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_alertsRSS</span> (line <span class="line-number">292</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns weather alert information for a given Zip Code or latitude/longitude (U.S. Only).</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_alertsRSS
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$code</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_cameraList" id="wb_cameraList"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_cameraList</span> (line <span class="line-number">962</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			wb_cameraList
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$code</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_compact" id="wb_compact"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_compact</span> (line <span class="line-number">670</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">*Legacy Function* - Returns concise live weather conditions for the chosen location.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_compact
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$stat_id</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$stat_id</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_compactLiveWeather" id="wb_compactLiveWeather"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_compactLiveWeather</span> (line <span class="line-number">594</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">WBWrapper::wb_compactLiveWeather()</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_compactLiveWeather
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$code</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_complete" id="wb_complete"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_complete</span> (line <span class="line-number">743</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns detailed live weather conditions for the chosen location.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_complete
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$stat_id</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$stat_id</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_forecast" id="wb_forecast"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_forecast</span> (line <span class="line-number">362</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the 7-day forecast for a zipcode, citycode or latitude/longitude.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_forecast
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$code</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_forecastRSS" id="wb_forecastRSS"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_forecastRSS</span> (line <span class="line-number">447</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the 7-day forecast for a zipcode, citycode or latitude/longitude.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_forecastRSS
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$code</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_liveWeather" id="wb_liveWeather"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_liveWeather</span> (line <span class="line-number">519</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">WBWrapper::wb_liveWeather()</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_liveWeather
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$unitType</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$code</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$unitType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_searchLocations" id="wb_searchLocations"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_searchLocations</span> (line <span class="line-number">63</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the location based on the U.S. and international city name or U.S. Zip Code.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_searchLocations
+		</span>
+					(<span class="var-type">string|int</span>&nbsp;<span class="var-name">$searchString</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|int</span>
+				<span class="var-name">$searchString</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwb_stationList" id="wb_stationList"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">wb_stationList</span> (line <span class="line-number">117</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">For a given zipcode, citycode or latitude/longitude this call returns the weather stations in the area.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wb_stationList
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$code</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$code</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constCACHE_TABLE" id="CACHE_TABLE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">CACHE_TABLE</span>
+			 = <span class="const-default"> 'WB_cache'</span>
+			(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constCACHE_TIME" id="CACHE_TIME"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">CACHE_TIME</span>
+			 = <span class="const-default"> 900</span>
+			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 25 Jun 2008 00:19:27 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.2</a>
+	</p>
+	</div></body>
+</html>
