@@ -1071,4 +1071,3 @@ class WBWrapper {
     }
 	
 }
-?>
